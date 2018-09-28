@@ -1,0 +1,42 @@
+{
+    "ERA": ["lowest era",
+            "best era",
+            "who has best era",
+            "who has the best era",
+            "player with the best era",
+            "player with the lowest era",
+            "era",
+            "player era",
+            "low era"
+        ]
+    "WAR": ["highest war",
+            "best war",
+            "who has best war",
+            "who has the best war",
+            "player with the best war",
+            "player with the highest war",
+            "war",
+            "player war",
+            "high war"
+        ]
+    "Wins": ["hiest wins",
+            "best wins",
+            "who has best wins",
+            "who has the best wins",
+            "player with the best wins",
+            "player with the lowest wins",
+            "wins",
+            "player wins",
+            "high wins"
+        ]
+    "Win-Loss%": ["lowest era",
+            "best era",
+            "who has best era",
+            "who has the best era",
+            "player with the best era",
+            "player with the lowest era",
+            "era",
+            "player era",
+            "low era"
+        ]
+}
