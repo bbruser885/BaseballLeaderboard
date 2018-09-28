@@ -1,6 +1,7 @@
 import requests
 import json
-from os import listdir
+import os
+from os import listdir, path
 from bs4 import BeautifulSoup
 
 
@@ -8,7 +9,9 @@ url_to_parse = 'https://www.baseball-reference.com/leagues/MLB/2018-pitching-lea
 desired_category = 'leaderboard_pitching_WAR_pitch'
 
 def load_JSON_from_url():
-    with open('src\\response\\url.JSON') as json_data:
+    path = os.path.join("src", "response", "url.JSON")
+    # with open('src\\response\\url.JSON') as json_data:
+    with open(path) as json_data:
         d = json.loads(json_data.read())
         return d
 
@@ -27,8 +30,8 @@ def scrape_baseball_reference(soup_data, desired_category):
             return [player_name, team, stat]
 
 
-soup_data = get_html_data(url_to_parse)
-stringy = str(type(soup_data))
+# soup_data = get_html_data(url_to_parse)
+# stringy = str(type(soup_data))
 # print(scrape_baseball_reference(soup_data, desired_category))
-# load_JSON_from_url()
+print(load_JSON_from_url())
 # print(listdir())
