@@ -7,6 +7,9 @@ from src import scraper
 
 class testScraper(unittest.TestCase):
 
+    def setUp(self):
+        pass
+
     def test_load_JSON_from_url(self):
         dict = {}
         result = scraper.load_JSON_from_url()
@@ -30,8 +33,8 @@ class testScraper(unittest.TestCase):
         for string in result:
             self.assertNotEqual(string, "")
         ## Test return with regex
-        regex = re.compile("([A-Z][a-zA-Z]*")
-        self.assertTrue(regex.match(result[0]))
+        # regex = re.compile("([A-Z][a-zA-Z]*")
+        # self.assertTrue(regex.match(result[0]))
         ## player should be [0 or more letters] a space [zero or more letter]
 
         ## Team should be of length 3 and contain only letters
